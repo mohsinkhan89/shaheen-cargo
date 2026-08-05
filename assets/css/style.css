@@ -3335,3 +3335,83 @@ input {
     height: 140px;
   }
 }
+
+/* Card action buttons now follow the same Lordicon theme */
+.card-lord-icon lord-icon,
+.card-theme-btn lord-icon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  transition: transform 0.22s ease, filter 0.22s ease;
+}
+
+.card-lord-icon {
+  border-radius: 999px;
+  background: #ffffff;
+  color: #075bd8;
+}
+
+.card-lord-icon:hover lord-icon,
+.card-lord-icon:focus-visible lord-icon {
+  filter: brightness(0) invert(1);
+  transform: translateX(2px) scale(1.06);
+}
+
+.service-card a.card-theme-btn {
+  min-height: 40px;
+  margin-top: 22px;
+  padding: 0 15px 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid rgba(7,91,216,0.16);
+  border-radius: 999px;
+  color: #075bd8;
+  background: #edf5ff;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.68), 0 10px 24px rgba(7,91,216,0.1);
+  font-weight: 900;
+  overflow: hidden;
+}
+
+.service-card a.card-theme-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent, rgba(255,255,255,0.36), transparent);
+  transform: translateX(-120%);
+  transition: transform 0.5s ease;
+}
+
+.service-card a.card-theme-btn span,
+.service-card a.card-theme-btn lord-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.service-card a.card-theme-btn:hover {
+  color: #ffffff;
+  border-color: rgba(46,160,255,0.55);
+  background: linear-gradient(135deg, #2ea0ff, #075bd8);
+  box-shadow: 0 16px 34px rgba(7,91,216,0.22);
+}
+
+.service-card a.card-theme-btn:hover::before {
+  transform: translateX(120%);
+}
+
+.service-card a.card-theme-btn:hover lord-icon,
+.service-card a.card-theme-btn:focus-visible lord-icon {
+  filter: brightness(0) invert(1);
+  transform: translateX(3px) scale(1.08);
+}
+
+.service-card a.card-theme-btn:hover span {
+  transform: none;
+}
+
+@media (max-width: 680px) {
+  .service-card a.card-theme-btn {
+    width: 100%;
+  }
+}
