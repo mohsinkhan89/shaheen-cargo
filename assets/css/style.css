@@ -247,7 +247,7 @@ input {
 }
 
 .hero__copy {
-  width: min(680px, 100%);
+  width: min(100%, 100%);
   color: #fff;
 }
 
@@ -261,7 +261,7 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.18);
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -2051,9 +2051,9 @@ input {
 
 .coverage--interactive::before {
   left: 46.7%;
-  top: -22%;
+  top: -13%;
   width: 330px;
-  height: 142%;
+  height: 115%;
   border-radius: 50%;
 }
 
@@ -2698,9 +2698,9 @@ input {
 }
 
 .hero h1 {
-  max-width: 720px;
+  max-width: 100%;
   margin: 22px 0 18px;
-  font-size: clamp(44px, 5.4vw, 76px);
+  font-size: clamp(44px, 5.4vw, 65px);
   text-shadow: 0 16px 34px rgba(0,0,0,0.22);
 }
 
@@ -3459,8 +3459,8 @@ input {
 }
 
 .hero h1 {
-  max-width: 760px;
-  font-size: clamp(48px, 4.15vw, 72px);
+  max-width: 100%;
+  font-size: clamp(48px, 4.15vw, 65px);
 }
 
 .tracking-card {
