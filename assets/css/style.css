@@ -2297,7 +2297,7 @@ input {
 }
 
 .cta h2 {
-  max-width: 620px;
+  max-width: 100%;
   margin: 4px 0 9px;
   font-size: clamp(30px, 3vw, 42px);
 }
@@ -3583,4 +3583,17 @@ input {
   .hero h1 {
     font-size: 38px;
   }
+}
+
+/* Footer follows the same width as header/content */
+.footer .container,
+.cta-wrap .container {
+  width: min(calc(100% - (var(--reference-gutter) * 2)), var(--reference-max));
+}
+
+.footer__grid,
+.footer__bottom,
+.cta {
+  margin-left: auto;
+  margin-right: auto;
 }
