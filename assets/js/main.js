@@ -194,6 +194,33 @@ newsletter.addEventListener("submit", (event) => {
 });
 
 const mapPins = document.querySelectorAll(".map-pin");
+const mapMobileDetail = document.querySelector(".map-mobile-detail");
+
+const resetMapMobileDetail = () => {
+  if (!mapMobileDetail) return;
+
+  mapMobileDetail.classList.remove("is-active");
+  mapMobileDetail.innerHTML = `
+    <span>Select a location</span>
+    <strong>Branch details will appear here</strong>
+    <small>Tap any map pin to view route information.</small>
+  `;
+};
+
+const updateMapMobileDetail = (pin) => {
+  if (!mapMobileDetail) return;
+
+  const title = pin.querySelector(".pin-tooltip strong")?.textContent || pin.getAttribute("aria-label") || "Branch details";
+  const route = pin.querySelector(".pin-tooltip small")?.textContent || "Coverage route";
+  const detail = pin.querySelector(".pin-tooltip em")?.textContent || "Tap another pin to view more branch information.";
+
+  mapMobileDetail.classList.add("is-active");
+  mapMobileDetail.innerHTML = `
+    <span>${route}</span>
+    <strong>${title}</strong>
+    <small>${detail}</small>
+  `;
+};
 mapPins.forEach((pin) => {
   pin.addEventListener("click", (event) => {
     event.stopPropagation();
@@ -201,9 +228,15 @@ mapPins.forEach((pin) => {
       if (item !== pin) item.classList.remove("is-active");
     });
     pin.classList.toggle("is-active");
+    if (pin.classList.contains("is-active")) {
+      updateMapMobileDetail(pin);
+    } else {
+      resetMapMobileDetail();
+    }
   });
 });
 
 document.addEventListener("click", () => {
   mapPins.forEach((pin) => pin.classList.remove("is-active"));
+  resetMapMobileDetail();
 });

@@ -5217,342 +5217,859 @@ footer[id],
     padding-right: 6px;
   }
 }
-/* Final mobile coverage polish */
+/* Final safe mobile nationwide coverage layout */
 @media (max-width: 920px) {
+  .map-pin--islamabad {
+    left: 55%;
+    top: 20%;
+  }
+  .map-pin--karachi {
+    left: 25%;
+    top: 51%;
+  }
+  .map-pin--multan {
+    left: 40%;
+    top: 38%;
+  }
+  .map-pin--quetta {
+    left: 15%;
+    top: 42%;
+  }
+  .map-pin--faisalabad {
+    left: 45%;
+    top: 28%;
+  }
+  .map-pin--lahore {
+    left: 55%;
+    top: 30%;
+  }
   .coverage--interactive {
-    margin-top: 46px;
-    padding: 42px 0 34px;
-    overflow: hidden;
-    background:
-      radial-gradient(circle at 90% 6%, rgba(255,255,255,0.16), transparent 26%),
-      linear-gradient(180deg, #064d7b 0%, var(--blue) 58%, #f7fbff 58.2%, #ffffff 100%);
+    margin-top: 42px !important;
+    padding: 0 0 34px !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    background: #f7fbff !important;
   }
 
   .coverage--interactive::before,
   .coverage--interactive::after {
-    display: none;
+    display: none !important;
   }
 
   .coverage-map-layout {
-    gap: 24px;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    min-height: 0 !important;
   }
 
   .coverage--interactive .coverage__copy {
-    padding: 0;
-    text-align: center;
+    margin-top: 0 !important;
+    padding: 28px 18px 22px !important;
+    border-radius: 0 0 12px 12px !important;
+    text-align: center !important;
+    background:
+      radial-gradient(circle at 86% 12%, rgba(255,255,255,0.18), transparent 26%),
+      linear-gradient(135deg, #064d7b, var(--blue)) !important;
+    box-shadow: 0 18px 42px rgba(6,31,69,0.14) !important;
   }
 
   .coverage--interactive .coverage__copy span {
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .coverage--interactive .coverage__copy h2,
-  .coverage--interactive .coverage__copy p {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center !important;
+    margin-bottom: 8px !important;
+    color: rgba(255,255,255,0.9) !important;
   }
 
   .coverage--interactive .coverage__copy h2 {
-    font-size: clamp(31px, 6vw, 42px);
+    max-width: 560px !important;
+    margin: 0 auto 10px !important;
+    color: #ffffff !important;
+    font-size: clamp(28px, 6vw, 38px) !important;
+    line-height: 1.12 !important;
   }
 
   .coverage--interactive .coverage__copy p {
-    font-size: 15px;
+    max-width: 580px !important;
+    margin: 0 auto !important;
+    color: rgba(255,255,255,0.86) !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
   }
 
   .coverage-stats--icons {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    margin-top: 22px;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin: 18px 0 0 !important;
   }
 
   .coverage-stats--icons div {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 7px;
-    min-height: 118px;
-    padding: 14px 10px;
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 8px;
-    background: rgba(255,255,255,0.1);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    align-content: center !important;
+    min-height: 92px !important;
+    padding: 10px 6px !important;
+    border: 1px solid rgba(255,255,255,0.18) !important;
+    border-radius: 8px !important;
+    background: rgba(255,255,255,0.1) !important;
   }
 
   .coverage-stats--icons span {
-    grid-row: auto;
-    width: 42px;
-    height: 42px;
+    grid-row: auto !important;
+    width: 34px !important;
+    height: 34px !important;
+    margin: 0 0 6px !important;
   }
 
   .coverage-stats--icons img {
-    width: 22px;
-    height: 22px;
+    width: 18px !important;
+    height: 18px !important;
   }
 
   .coverage-stats--icons strong {
-    font-size: 24px;
+    font-size: 20px !important;
+    line-height: 1.05 !important;
   }
 
   .coverage-stats--icons small {
-    max-width: 92px;
-    text-align: center;
-    font-size: 11px;
-    line-height: 1.25;
+    max-width: 88px !important;
+    color: rgba(255,255,255,0.78) !important;
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
   }
 
   .pakistan-map-card {
-    min-height: 350px;
-    padding: 16px 10px 8px;
-    border: 1px solid rgba(17,146,209,0.12);
-    border-radius: 10px;
-    background:
-      radial-gradient(circle at 18% 18%, rgba(17,146,209,0.08), transparent 28%),
-      #ffffff;
-    box-shadow: 0 18px 42px rgba(6,31,69,0.09);
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 14px 10px 12px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(17,146,209,0.12) !important;
+    border-radius: 10px !important;
+    background: #ffffff !important;
+    box-shadow: 0 16px 38px rgba(6,31,69,0.08) !important;
+    transform: none !important;
   }
 
   .map-texture {
-    left: auto;
-    right: -28px;
-    top: -24px;
-    opacity: 0.16;
+    display: none !important;
   }
 
   .pakistan-map-img {
-    width: 100%;
-    height: 320px;
-    opacity: 0.72;
-    filter: grayscale(1) saturate(0) brightness(1.18) contrast(0.9) drop-shadow(0 12px 22px rgba(6,31,69,0.08));
-  }
-
-  .coverage--interactive .metric-strip {
-    width: 100%;
-    margin-top: 18px;
-    transform: none;
-  }
-}
-
-@media (max-width: 680px) {
-  .coverage--interactive {
-    margin-top: 34px;
-    padding: 36px 0 28px;
-    background:
-      radial-gradient(circle at 90% 4%, rgba(255,255,255,0.14), transparent 24%),
-      linear-gradient(180deg, #064d7b 0%, var(--blue) 64%, #f7fbff 64.2%, #ffffff 100%);
-  }
-
-  .coverage--interactive .coverage__copy h2 {
-    font-size: 30px;
-    line-height: 1.14;
-  }
-
-  .coverage--interactive .coverage__copy p {
-    font-size: 14px;
-    line-height: 1.65;
-  }
-
-  .coverage-stats--icons {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8px;
-  }
-
-  .coverage-stats--icons div {
-    min-height: 104px;
-    padding: 12px 6px;
-  }
-
-  .coverage-stats--icons span {
-    width: 36px;
-    height: 36px;
-  }
-
-  .coverage-stats--icons img {
-    width: 19px;
-    height: 19px;
-  }
-
-  .coverage-stats--icons strong {
-    font-size: 21px;
-  }
-
-  .coverage-stats--icons small {
-    font-size: 10px;
-  }
-
-  .pakistan-map-card {
-    min-height: 300px;
-    padding: 12px 6px 2px;
-    overflow: hidden;
-  }
-
-  .pakistan-map-img {
-    height: 278px;
+    width: 100% !important;
+    height: clamp(236px, 68vw, 330px) !important;
+    object-fit: contain !important;
+    opacity: 0.78 !important;
+    transform: none !important;
   }
 
   .map-pin {
-    gap: 0;
-    font-size: 0;
+    z-index: 4 !important;
+    gap: 0 !important;
+    font-size: 0 !important;
   }
 
-  .pin-label {
-    display: none;
+  .pin-label,
+  .pin-tooltip {
+    display: none !important;
   }
 
   .pin-dot {
-    width: 16px;
-    height: 16px;
+    width: 15px !important;
+    height: 15px !important;
   }
 
   .pin-dot::before {
-    width: 6px;
-    height: 6px;
-  }
-
-  .pin-tooltip {
-    left: 50%;
-    bottom: calc(100% + 10px);
-    width: 166px;
-    padding: 9px 10px;
-    transform: translate(-50%, 8px);
-  }
-
-  .map-pin:hover .pin-tooltip,
-  .map-pin:focus .pin-tooltip,
-  .map-pin.is-active .pin-tooltip {
-    transform: translate(-50%, 0);
+    width: 6px !important;
+    height: 6px !important;
   }
 
   .coverage--interactive .metric-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    padding: 12px;
-    border-radius: 10px;
+    width: 100% !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    margin: 16px auto 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
   }
 
   .coverage--interactive .metric-strip div {
-    min-height: 108px;
-    padding: 12px 8px;
-    border-right: 0;
-    border-radius: 8px;
-    background: #ffffff;
-    box-shadow: 0 10px 24px rgba(6,31,69,0.07);
+    min-height: 96px !important;
+    padding: 12px 8px !important;
+    border: 1px solid rgba(17,146,209,0.1) !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    box-shadow: 0 12px 28px rgba(6,31,69,0.07) !important;
   }
 
   .coverage--interactive .metric-strip div:last-child {
-    border-right: 0;
+    border-right: 1px solid rgba(17,146,209,0.1) !important;
   }
 
   .metric-icon {
-    width: 42px;
-    height: 42px;
+    width: 38px !important;
+    height: 38px !important;
   }
 
   .metric-strip strong {
-    font-size: 24px;
+    font-size: 23px !important;
   }
 
   .metric-strip small {
-    font-size: 11px;
-    line-height: 1.3;
+    font-size: 11px !important;
+    line-height: 1.25 !important;
   }
 }
 
 @media (max-width: 420px) {
   .coverage-stats--icons {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .coverage-stats--icons div {
-    min-height: 76px;
-    grid-template-columns: 40px 1fr;
-    justify-items: start;
-    text-align: left;
-    padding: 10px 12px;
+    min-height: 70px !important;
+    grid-template-columns: 38px 1fr !important;
+    justify-items: start !important;
+    text-align: left !important;
+    padding: 10px 12px !important;
   }
 
   .coverage-stats--icons span {
-    grid-row: span 2;
+    grid-row: span 2 !important;
+    margin: 0 !important;
   }
 
   .coverage-stats--icons small {
-    max-width: none;
-    text-align: left;
-  }
-
-  .pakistan-map-card {
-    min-height: 262px;
-  }
-
-  .pakistan-map-img {
-    height: 244px;
+    max-width: none !important;
+    text-align: left !important;
   }
 
   .coverage--interactive .metric-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .coverage--interactive .metric-strip div {
-    min-height: 88px;
+    min-height: 82px !important;
   }
 }
-/* Coverage pin tooltip stacking fix */
-.coverage-map-layout,
-.pakistan-map-card {
-  isolation: isolate;
+/* Mobile map location detail panel */
+.map-mobile-detail {
+  display: none;
 }
 
-.pakistan-map-card,
-.map-pin {
+@media (max-width: 920px) {
+  .map-mobile-detail {
+    display: grid;
+    gap: 4px;
+    margin: 10px 4px 0;
+    padding: 12px 14px;
+    border: 1px solid rgba(17,146,209,0.13);
+    border-radius: 8px;
+    background: #f7fbff;
+    color: #172446;
+    box-shadow: inset 3px 0 0 rgba(17,146,209,0.34);
+  }
+
+  .map-mobile-detail.is-active {
+    background: #ffffff;
+    box-shadow: inset 3px 0 0 var(--blue), 0 12px 28px rgba(6,31,69,0.08);
+  }
+
+  .map-mobile-detail span {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .map-mobile-detail strong {
+    color: #0c1d3d;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .map-mobile-detail small {
+    color: #66738d;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+}
+/* Mobile map marker visible fix */
+@media (max-width: 920px) {
+  .map-pin {
+    width: 32px !important;
+    height: 32px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .pin-dot {
+    width: 28px !important;
+    height: 28px !important;
+    display: grid !important;
+    place-items: center !important;
+    border: 3px solid #ffffff !important;
+    border-radius: 50% !important;
+    background: var(--blue) !important;
+    transform: none !important;
+    box-shadow: 0 8px 20px rgba(17,146,209,0.34) !important;
+  }
+
+  .pin-dot::before {
+    content: "\f3c5" !important;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    inset: auto !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  .pin-dot::after {
+    inset: -7px !important;
+    z-index: -1 !important;
+    border-radius: 50% !important;
+    background: rgba(17,146,209,0.16) !important;
+  }
+
+  .map-pin:hover .pin-dot,
+  .map-pin:focus .pin-dot,
+  .map-pin.is-active .pin-dot {
+    transform: translateY(-2px) scale(1.05) !important;
+    background: var(--blue-hover) !important;
+  }
+}
+
+/* 3D cargo loading workers section */
+.loading-work {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(17,146,209,0.08), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #f5f8fd 100%);
+}
+
+.loading-work__inner {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  align-items: center;
+  gap: 44px;
+}
+
+.loading-work__copy span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--blue);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.loading-work__copy h2 {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: clamp(32px, 3.4vw, 48px);
+  line-height: 1.08;
+}
+
+.loading-work__copy p {
+  max-width: 510px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.loading-work__points {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.loading-work__points div {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid rgba(17,146,209,0.12);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(6,31,69,0.06);
+}
+
+.loading-work__points i {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--blue);
+}
+
+.loading-work__points strong {
+  color: #152249;
+  font-size: 14px;
+}
+
+.loading-scene {
+  position: relative;
+  min-height: 420px;
+  border: 1px solid rgba(17,146,209,0.12);
+  border-radius: 10px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.9), rgba(245,248,253,0.92)),
+    radial-gradient(circle at 70% 26%, rgba(17,146,209,0.16), transparent 30%);
+  box-shadow: 0 26px 70px rgba(6,31,69,0.11);
+  perspective: 900px;
+}
+
+.scene-floor {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 52px;
+  height: 96px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(6,31,69,0.16), transparent 68%);
+  transform: rotateX(66deg);
+}
+
+.container-3d {
+  position: absolute;
+  right: 12%;
+  bottom: 112px;
+  width: 330px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transform: rotateX(2deg) rotateY(-24deg);
+}
+
+.container-3d__side,
+.container-3d__front,
+.container-3d__door {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+}
+
+.container-3d__side {
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.15) 0 3px, transparent 3px 28px),
+    linear-gradient(135deg, #1192d1, #0b6f9f);
+  box-shadow: inset 0 -18px rgba(0,0,0,0.08), 0 26px 42px rgba(6,31,69,0.22);
+}
+
+.container-3d__front {
+  left: auto;
+  right: -54px;
+  width: 72px;
+  transform: skewY(-16deg);
+  transform-origin: left center;
+  background: linear-gradient(135deg, #0b6f9f, #064d7b);
+}
+
+.container-3d__door {
+  left: 22px;
+  top: 24px;
+  width: 94px;
+  height: 96px;
+  border: 2px solid rgba(255,255,255,0.46);
+  background: rgba(255,255,255,0.09);
+}
+
+.cargo-stack {
+  position: absolute;
+  left: 15%;
+  bottom: 110px;
+  width: 180px;
+  height: 126px;
+}
+
+.cargo-stack span,
+.moving-box {
+  position: absolute;
+  width: 58px;
+  height: 48px;
+  border: 2px solid rgba(124,77,30,0.18);
+  border-radius: 6px;
+  background: linear-gradient(135deg, #d99748, #b86f27);
+  box-shadow: inset 0 10px rgba(255,255,255,0.13), 0 12px 22px rgba(6,31,69,0.16);
+}
+
+.cargo-stack span:nth-child(1) { left: 0; bottom: 0; }
+.cargo-stack span:nth-child(2) { left: 62px; bottom: 0; }
+.cargo-stack span:nth-child(3) { left: 31px; bottom: 52px; }
+.cargo-stack span:nth-child(4) { left: 94px; bottom: 52px; }
+
+.moving-box {
+  left: 41%;
+  bottom: 176px;
+  animation: loadBox 3.2s ease-in-out infinite;
+}
+
+.worker {
+  position: absolute;
+  bottom: 96px;
+  width: 46px;
+  height: 112px;
+}
+
+.worker::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f1b681;
+  box-shadow: 0 -7px 0 #f2b321;
+}
+
+.worker::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 29px;
+  width: 31px;
+  height: 48px;
+  border-radius: 12px 12px 8px 8px;
+  background: var(--blue);
+}
+
+.worker span::before,
+.worker span::after {
+  content: "";
+  position: absolute;
+  background: #26385c;
+}
+
+.worker span::before {
+  left: 15px;
+  top: 76px;
+  width: 8px;
+  height: 36px;
+  border-radius: 999px;
+  transform: rotate(8deg);
+}
+
+.worker span::after {
+  right: 13px;
+  top: 76px;
+  width: 8px;
+  height: 36px;
+  border-radius: 999px;
+  transform: rotate(-10deg);
+}
+
+.worker--left { left: 36%; }
+.worker--right { right: 30%; transform: scaleX(-1); }
+.worker--right::after { background: #0b6f9f; }
+
+@keyframes loadBox {
+  0%, 100% { transform: translate(-60px, 26px) rotate(-6deg); }
+  50% { transform: translate(90px, -16px) rotate(6deg); }
+}
+
+@media (max-width: 920px) {
+  .loading-work__inner {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .loading-work__copy {
+    text-align: center;
+  }
+
+  .loading-work__copy p {
+    margin-inline: auto;
+  }
+
+  .loading-work__points {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .loading-work__points div {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 8px;
+  }
+
+  .loading-scene {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 560px) {
+  .loading-work__points {
+    grid-template-columns: 1fr;
+  }
+
+  .loading-scene {
+    min-height: 292px;
+  }
+
+  .container-3d {
+    right: 6%;
+    bottom: 86px;
+    width: 210px;
+    height: 108px;
+  }
+
+  .container-3d__front {
+    right: -38px;
+    width: 50px;
+  }
+
+  .container-3d__door {
+    left: 15px;
+    top: 18px;
+    width: 62px;
+    height: 68px;
+  }
+
+  .cargo-stack {
+    left: 8%;
+    bottom: 82px;
+    transform: scale(0.72);
+    transform-origin: left bottom;
+  }
+
+  .worker {
+    bottom: 70px;
+    transform: scale(0.72);
+    transform-origin: bottom center;
+  }
+
+  .worker--left { left: 39%; }
+  .worker--right { right: 20%; transform: scaleX(-1) scale(0.72); }
+
+  .moving-box {
+    width: 44px;
+    height: 36px;
+    bottom: 134px;
+  }
+}
+/* Generated loading image final layout */
+.loading-scene--image {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
   overflow: visible;
+  background: transparent;
+  box-shadow: none;
+  perspective: none;
 }
 
-.map-pin {
-  z-index: 20;
+.loading-scene--image img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  filter: drop-shadow(0 26px 42px rgba(6,31,69,0.16));
 }
 
-.map-pin:hover,
-.map-pin:focus,
-.map-pin.is-active {
-  z-index: 80;
+.loading-scene--image .scene-floor,
+.loading-scene--image .container-3d,
+.loading-scene--image .cargo-stack,
+.loading-scene--image .worker,
+.loading-scene--image .moving-box {
+  display: none;
 }
 
-.pin-tooltip {
-  z-index: 90;
+@media (max-width: 920px) {
+  .loading-scene--image {
+    order: -1;
+  }
+
+  .loading-scene--image img {
+    max-width: 760px;
+    margin-inline: auto;
+  }
 }
 
-@media (max-width: 680px) {
-  .coverage--interactive {
-    overflow: visible;
+@media (max-width: 560px) {
+  .loading-work {
+    padding-top: 54px;
   }
 
-  .pakistan-map-card {
-    overflow: visible;
-    padding-bottom: 34px;
+  .loading-scene--image img {
+    width: 118%;
+    max-width: none;
+    margin-left: -9%;
+  }
+}
+/* Three.js loading model final layout */
+.loading-scene--model {
+  min-height: 460px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  box-shadow: none;
+  perspective: none;
+}
+
+.loading-scene--model canvas {
+  width: 100%;
+  height: 460px;
+  display: block;
+  cursor: grab;
+}
+
+@media (max-width: 920px) {
+  .loading-scene--model {
+    order: -1;
+    min-height: 390px;
   }
 
-  .pin-tooltip {
-    top: calc(100% + 12px);
-    bottom: auto;
-    left: 50%;
-    width: min(176px, 48vw);
-    transform: translate(-50%, -8px) scale(0.96);
+  .loading-scene--model canvas {
+    height: 390px;
+  }
+}
+
+@media (max-width: 560px) {
+  .loading-scene--model {
+    min-height: 310px;
   }
 
-  .pin-tooltip::after {
-    top: -7px;
-    bottom: auto;
-    left: 50%;
-    border: 0;
-    border-left: 1px solid rgba(210,223,241,0.96);
-    border-top: 1px solid rgba(210,223,241,0.96);
-    transform: translateX(-50%) rotate(45deg);
+  .loading-scene--model canvas {
+    height: 310px;
+  }
+}
+/* Professional 3D loading UI polish */
+.loading-work {
+  padding: 86px 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(17,146,209,0.08), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #f6f9fd 100%);
+}
+
+.loading-work__inner {
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 26px;
+}
+
+.loading-work__copy {
+  position: relative;
+  z-index: 2;
+  padding: 26px;
+  border: 1px solid rgba(17,146,209,0.1);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.84);
+  box-shadow: 0 18px 48px rgba(6,31,69,0.08);
+}
+
+.loading-work__points div {
+  box-shadow: none;
+}
+
+.loading-scene--model {
+  position: relative;
+  min-height: 500px;
+  border: 1px solid rgba(17,146,209,0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 16%, rgba(53,184,242,0.18), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #eef6fb 100%);
+  box-shadow: 0 26px 70px rgba(6,31,69,0.12);
+}
+
+.loading-scene--model::before {
+  content: "Dock Operation";
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  z-index: 2;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(17,146,209,0.14);
+  border-radius: 999px;
+  color: var(--blue);
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(10px);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.loading-scene--model::after {
+  content: "";
+  position: absolute;
+  inset: auto 8% 22px 8%;
+  height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(6,31,69,0.15), transparent 68%);
+  pointer-events: none;
+}
+
+.loading-scene--model canvas {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+}
+
+@media (max-width: 920px) {
+  .loading-work {
+    padding: 62px 0;
   }
 
-  .map-pin:hover .pin-tooltip,
-  .map-pin:focus .pin-tooltip,
-  .map-pin.is-active .pin-tooltip {
-    transform: translate(-50%, 0) scale(1);
+  .loading-work__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .loading-work__copy {
+    padding: 22px;
+  }
+
+  .loading-scene--model {
+    min-height: 420px;
+  }
+
+  .loading-scene--model canvas {
+    height: 420px;
+  }
+}
+
+@media (max-width: 560px) {
+  .loading-work {
+    padding: 48px 0;
+  }
+
+  .loading-scene--model {
+    min-height: 330px;
+    border-radius: 10px;
+  }
+
+  .loading-scene--model::before {
+    left: 12px;
+    top: 12px;
+    min-height: 30px;
+    font-size: 10px;
+  }
+
+  .loading-scene--model canvas {
+    height: 330px;
   }
 }
